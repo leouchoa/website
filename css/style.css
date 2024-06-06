@@ -1,3 +1,8 @@
+.bg-color {
+  background-color: rgb(1 20 35);
+  color: #ffffff;
+}
+
 .container {
   display: grid;
   /* Step 2: setup rows amd columns */
@@ -17,11 +22,6 @@
   border: 1px solid red;
 }
 
-.bg-color {
-  background-color: rgb(1 20 35);
-  color: #ffffff;
-}
-
 .header {
   /* background: aqua; */
   grid-area: hd;
@@ -38,6 +38,19 @@
   margin: 50px;
   padding: 10px;
   font-size: 30px;
+}
+a:link,
+a:visited {
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover,
+a:active {
+  background-color: green;
 }
 
 .intro {
