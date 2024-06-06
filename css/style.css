@@ -1,0 +1,35 @@
+.container {
+  display: grid;
+  /* Step 2: setup rows amd columns */
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 50px 200px 600px;
+  grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "intro intro intro intro intro intro intro intro"
+    "bp bp bp bp bp bp bp bp";
+  border: 2px solid yellow;
+}
+.box {
+  border: 1px solid red;
+}
+
+.bg-color {
+  background-color: rgb(1 20 35);
+  color: #ffffff;
+}
+
+.header {
+  /* background: aqua; */
+  grid-area: hd;
+}
+
+.intro {
+  /* background: mistyrose; */
+  grid-area: intro;
+}
+
+.blogposts {
+  /* background: lawngreen; */
+  grid-area: bp;
+}
