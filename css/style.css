@@ -5,9 +5,7 @@
 
 .container {
   display: grid;
-  /* Step 2: setup rows amd columns */
   grid-template-columns: repeat(3, 1fr);
-  /* grid-template-columns: 300px 300px 300px; */
   grid-template-rows: 150px 200px 600px;
   grid-template-areas:
     "hd hd hd hd hd hd hd hd"
@@ -40,6 +38,7 @@
   padding: 10px;
   font-size: 30px;
 }
+
 a:link,
 a:visited {
   color: white;
@@ -67,8 +66,8 @@ a:active {
 }
 
 .profile-pic {
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
   border-radius: 50%; /* Makes the image round */
   margin-right: 15px; /* Space between image and text */
 }
@@ -119,6 +118,7 @@ a:active {
   align-items: center;
   border: 2px solid yellow;
   color: black;
+  border-radius: 2rem;
 }
 
 .footer {
@@ -130,13 +130,11 @@ a:active {
   grid-area: ft;
 }
 
-.github-logo {
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
-  border-radius: 60%; /* Makes the image round */
-}
-
+.github-logo,
+/* .email-logo , */
 .linkedin-logo {
+  display: flex;
+  justify-content: center;
   width: 40px; /* Adjust size as needed */
   height: 40px; /* Adjust size as needed */
   border-radius: 60%; /* Makes the image round */
