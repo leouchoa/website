@@ -12,13 +12,8 @@
     "intro intro intro intro intro intro intro intro"
     "bp bp bp bp bp bp bp bp"
     "ft ft ft ft ft ft ft ft";
-  border: 2px solid yellow;
   width: 100%;
   height: 100%;
-}
-
-.box {
-  border: 1px solid red;
 }
 
 .header {
@@ -33,10 +28,9 @@
 
 .hd {
   background-color: acqua;
-  border: 2px solid yellow;
   margin: 50px;
   padding: 10px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 a:link,
@@ -50,11 +44,10 @@ a:visited {
 
 a:hover,
 a:active {
-  background-color: green;
+  color: inherit;
 }
 
 .intro {
-  /* border: 2px solid #ccc; */
   grid-area: intro;
   /* align-items: center; */
   /* font-size: 40px; */
@@ -67,7 +60,6 @@ a:active {
 
 .intro-prof-info {
   grid-area: pic;
-  border: 2px solid white;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: "img txt";
@@ -76,6 +68,7 @@ a:active {
 .intro-prof-info-img {
   grid-area: img;
   display: flex;
+  flex-direction: column;
   justify-items: center;
   align-items: center;
 }
@@ -85,6 +78,7 @@ a:active {
   height: 100px; /* Adjust size as needed */
   border-radius: 50%; /* Makes the image round */
   margin-right: 15px; /* Space between image and text */
+  margin-top: 20px;
 }
 
 .intro-prof-info-txt {
@@ -97,12 +91,13 @@ a:active {
 
 .intro-prof-subs {
   grid-area: subs;
-  border: 2px solid aqua;
   font-size: 20px;
 }
 
 .subsc {
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
   align-items: center;
   justify-items: center;
 }
@@ -111,13 +106,11 @@ a:active {
 .subsc textarea {
   margin-bottom: 15px;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
 .subsc button {
   padding: 10px;
-  border: none;
   background-color: #007bff;
   color: white;
   border-radius: 4px;
@@ -138,13 +131,11 @@ a:active {
 
 /* .profile-info-text { */
 /*   font-size: 25px; */
-/*   border: 2px solid yellow; */
 /*   display: flex; */
 /*   justify-content: right; */
 /* } */
 
 .blogposts {
-  /* background: lawngreen; */
   display: grid;
   position: relative;
   width: 100%;
@@ -172,7 +163,6 @@ a:active {
   background-color: white;
   justify-content: center;
   align-items: center;
-  border: 2px solid yellow;
   color: black;
   border-radius: 2rem;
 }
@@ -306,7 +296,7 @@ a:active {
   .hd {
     margin: 10px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 25px;
   }
 
   .intro {
