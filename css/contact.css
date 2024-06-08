@@ -6,7 +6,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 200px 800px;
+  grid-template-rows: 200px 1200px;
   grid-template-areas:
     "hd hd hd hd hd hd hd hd"
     "info info info info info info info info";
@@ -48,9 +48,11 @@ a:active {
 
 .contact-info {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 800px;
-  grid-template-areas: "about contact";
+  grid-template-columns: 1fr;
+  grid-template-rows: 300px 900px;
+  grid-template-areas:
+    "about"
+    "contact";
   border: 2px solid red;
   /* width: 100%; */
   /* height: 100%; */
@@ -75,8 +77,12 @@ a:active {
 .info-contact {
   border: 2px solid pink;
   grid-area: contact;
-  display: grid;
-  grid-auto-rows: 200px 200px 200px;
+  /* display: grid; */
+  /* grid-auto-rows: 200px 200px 200px; */
+}
+
+.ct-hd {
+  grid-area: ct-hd;
 }
 
 .contact-hd {
@@ -98,6 +104,20 @@ a:active {
   border: 3px solid gray;
   /* color: black; */
   /* border-radius: 2rem; */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:
+    "ct-hd ct-hd ct-hd"
+    "ct-info ct-info ct-info";
+}
+
+.contact-box.email,
+.contact-box.github,
+.contact-box.linkedin {
+  grid-area: ct-info;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* justify-content: left; */
+  height: 100px;
 }
 
 .contact-box.email {
