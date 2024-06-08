@@ -195,3 +195,95 @@ a:active {
   height: 40px; /* Adjust size as needed */
   border-radius: 60%; /* Makes the image round */
 }
+
+@media (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd"
+      "intro"
+      "bp"
+      "ft";
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .hd {
+    margin: 10px;
+    padding: 5px;
+    font-size: 20px;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pic"
+      "subs";
+  }
+
+  .intro-prof-info {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "img"
+      "txt";
+  }
+
+  .intro-prof-info-img {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+  }
+
+  .intro-prof-info-txt {
+    text-align: center;
+    font-size: 18px;
+  }
+
+  .intro-prof-subs {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .subsc {
+    flex-direction: column;
+  }
+
+  .blogposts {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    width: 100%;
+    height: auto;
+  }
+
+  .postbox {
+    width: 100%;
+    margin: 10px;
+    border-radius: 1rem;
+  }
+
+  .text {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .footer {
+    flex-direction: column;
+  }
+
+  .github-logo,
+  .linkedin-logo {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+  }
+}
