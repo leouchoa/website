@@ -54,15 +54,30 @@ a:active {
 }
 
 .intro {
-  /* background: mistyrose; */
-  grid-area: intro;
-  display: flex;
-  align-items: center;
-  font-size: 40px;
   /* border: 2px solid #ccc; */
-  padding: 10px;
-  border-radius: 10px;
-  max-width: 600px;
+  grid-area: intro;
+  /* align-items: center; */
+  /* font-size: 40px; */
+  /* padding: 10px; */
+  /* border-radius: 10px; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "pic subs";
+}
+
+.intro-prof-info {
+  grid-area: pic;
+  border: 2px solid white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "img txt";
+}
+
+.intro-prof-info-img {
+  grid-area: img;
+  display: flex;
+  justify-items: center;
+  align-items: center;
 }
 
 .profile-pic {
@@ -72,20 +87,61 @@ a:active {
   margin-right: 15px; /* Space between image and text */
 }
 
-.profile-info {
-  display: flex;
-  flex-direction: column;
+.intro-prof-info-txt {
+  grid-area: txt;
+  /* display: flex; */
+  /* justify-items: center; */
+  /* align-items: center; */
   font-size: 20px;
-  align-items: center;
-  justify-content: right;
 }
 
-.profile-info-text {
-  font-size: 25px;
-  border: 2px solid yellow;
-  display: flex;
-  justify-content: right;
+.intro-prof-subs {
+  grid-area: subs;
+  border: 2px solid aqua;
+  font-size: 20px;
 }
+
+.subsc {
+  padding: 10px;
+  align-items: center;
+  justify-items: center;
+}
+
+.subsc input,
+.subsc textarea {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.subsc button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.email button:hover {
+  background-color: #0056b3;
+}
+
+/* .profile-info { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/*   font-size: 20px; */
+/*   align-items: center; */
+/*   justify-content: right; */
+/* } */
+
+/* .profile-info-text { */
+/*   font-size: 25px; */
+/*   border: 2px solid yellow; */
+/*   display: flex; */
+/*   justify-content: right; */
+/* } */
 
 .blogposts {
   /* background: lawngreen; */
