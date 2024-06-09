@@ -1,3 +1,5 @@
+@import url("core.css");
+
 /* Media Queries */
 
 /* Tablet */
@@ -25,11 +27,6 @@
     font-size: 20px;
     padding: 10px;
   }
-}
-
-.bg-color {
-  background-color: rgb(1 20 35);
-  color: #ffffff;
 }
 
 .container {
