@@ -26,6 +26,11 @@
   justify-content: center;
 }
 
+.hd-blog-ref:link,
+.hd-blog-ref:visited {
+  color: white;
+}
+
 .hd {
   background-color: acqua;
   margin: 50px;
@@ -35,7 +40,6 @@
 
 a:link,
 a:visited {
-  color: white;
   padding: 15px 25px;
   text-align: center;
   text-decoration: none;
@@ -48,6 +52,7 @@ a:active {
 }
 
 .intro {
+  margin-top: 50px;
   grid-area: intro;
   /* align-items: center; */
   /* font-size: 40px; */
@@ -71,6 +76,10 @@ a:active {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+}
+
+.profile-pic-caption {
+  font-size: 20px;
 }
 
 .profile-pic {
@@ -145,6 +154,7 @@ a:active {
   justify-items: center;
   align-items: center;
   grid-area: bp;
+  margin-top: 100px;
 }
 
 .text {
@@ -165,6 +175,10 @@ a:active {
   align-items: center;
   color: black;
   border-radius: 2rem;
+}
+
+.postbox-link {
+  color: black;
 }
 
 .footer {
@@ -256,6 +270,11 @@ a:active {
     width: 80%;
     margin: 20px auto;
     border-radius: 1rem;
+    color: black;
+  }
+
+  .postbox-link {
+    color: black;
   }
 
   .text {
@@ -348,6 +367,11 @@ a:active {
     width: 100%;
     margin: 10px;
     border-radius: 1rem;
+    color: black;
+  }
+
+  .postbox-link {
+    color: black;
   }
 
   .text {
