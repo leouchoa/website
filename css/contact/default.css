@@ -20,13 +20,17 @@
 }
 
 .info-about {
-  font-size: 20px;
   padding: 20px;
 }
 
 .info-about a {
-  color: #007bff;
+  color: peru;
   text-decoration: none;
+}
+
+.text-intro,
+.text-work {
+  font-size: 20px;
 }
 
 .info-about a:hover {
