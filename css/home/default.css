@@ -1,12 +1,12 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 150px 200px 1000px 100px;
+  grid-template-rows: 150px 200px 1000px 50px;
   grid-template-areas:
-    "hd hd hd hd hd hd hd hd"
-    "intro intro intro intro intro intro intro intro"
-    "bp bp bp bp bp bp bp bp"
-    "ft ft ft ft ft ft ft ft";
+    "hd hd hd "
+    "intro intro intro "
+    "bp bp bp "
+    "ft ft ft ";
   width: 100%;
   height: 100%;
 }
@@ -83,24 +83,14 @@
   background-color: #0056b3;
 }
 
+/* Default blogposts to be vertical */
 .blogposts {
-  display: grid;
-  position: relative;
-  width: 100%;
-  height: 800px;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  grid-area: bp;
+  width: 100%;
+  height: auto;
   margin-top: 100px;
-}
-
-.text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
 }
 
 .footer {
