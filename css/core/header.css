@@ -1,0 +1,12 @@
+.header {
+  grid-area: hd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hd {
+  margin: 10px;
+  padding: 10px;
+  font-size: 25px;
+}

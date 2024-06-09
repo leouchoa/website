@@ -1,0 +1,9 @@
+@media (max-width: 900px) and (min-width: 600px) {
+  .hd {
+    font-size: 25px;
+  }
+
+  .info-about {
+    font-size: 25px;
+  }
+}
