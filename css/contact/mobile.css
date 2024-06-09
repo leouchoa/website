@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+  .container {
+    grid-template-rows: auto auto;
+  }
+
+  .hd {
+    font-size: 25px;
+  }
+
+  .info-about {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
