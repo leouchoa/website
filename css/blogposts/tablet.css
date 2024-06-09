@@ -1,0 +1,35 @@
+@media (max-width: 900px) and (min-width: 600px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "hd"
+      "postbox";
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .hd {
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .blogposts {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+  }
+
+  .postbox {
+    width: 90%;
+    margin: 20px;
+    border-radius: 1rem;
+  }
+}

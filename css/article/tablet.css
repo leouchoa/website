@@ -1,0 +1,21 @@
+@media (max-width: 900px) and (min-width: 600px) {
+  .container {
+    grid-template-rows: auto auto;
+  }
+
+  .header {
+    padding: 10px;
+  }
+
+  .hd {
+    margin: 20px;
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  .blogposts {
+    margin: 20px;
+    font-size: 20px;
+    padding: 20px;
+  }
+}
