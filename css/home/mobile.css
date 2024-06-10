@@ -1,85 +1,158 @@
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .container {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "hd"
-      "intro"
-      "bp"
-      "ft";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .header {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 22px;
   }
 
   .hd {
-    margin: 10px;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
     padding: 5px;
-    font-size: 25px;
+    font-size: 22px;
   }
 
   .intro {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "pic"
-      "subs";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .intro-prof-info {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "img"
-      "txt";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .intro-prof-info-img {
+    display: flex;
     justify-content: center;
     margin-bottom: 15px;
   }
 
   .profile-pic {
-    width: 80px;
-    height: 80px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
   }
 
   .intro-prof-info-txt {
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    margin: 10px 0;
   }
 
   .intro-prof-subs {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
+    margin: 10px 0;
   }
 
   .subsc {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
   }
 
   .blogposts {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, auto);
     width: 100%;
     height: auto;
+    margin-top: 50px;
   }
 
   .postbox {
-    width: 100%;
-    margin: 10px;
-    border-radius: 1rem;
+    display: grid;
+    grid-template-areas:
+      "img"
+      "text";
+    height: 500px;
+    width: 80%; /* Full width for smaller screens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid yellow;
+    grid-area: img;
   }
 
-  .text {
-    position: relative;
-    top: 0;
-    left: 0;
-    padding: 10px;
+  .postbox-image,
+  .postbox-image-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    height: 250px;
+    border: 2px solid green;
+    grid-area: img;
+  }
+
+  .postbox-image-caption {
+    margin-top: 20px;
     text-align: center;
+    grid-area: img;
+  }
+
+  .postbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    grid-area: text;
+  }
+
+  .postbox-content h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    grid-area: text;
+  }
+
+  .postbox-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: beige;
+    grid-area: text;
+  }
+
+  .read-more-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-area: text;
+  }
+
+  .read-more-btn:hover {
+    background-color: #0056b3;
+    grid-area: text;
   }
 
   .footer {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
   }
 
   .github-logo,

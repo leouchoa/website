@@ -28,8 +28,71 @@
   }
 
   .postbox {
-    width: 90%;
-    margin: 10px;
-    border-radius: 1rem;
+    display: grid;
+    grid-template-areas:
+      "img"
+      "text";
+    height: 500px;
+    width: 80%; /* Full width for smaller screens */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid yellow;
+  }
+  .postbox-image,
+  .postbox-image-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 250px;
+    height: 250px;
+    border: 2px solid green;
+    grid-area: img;
+  }
+
+  .postbox-image-caption {
+    margin-top: 20px;
+    text-align: center;
+    grid-area: img;
+  }
+
+  .postbox-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: beige;
+    grid-area: text;
+  }
+
+  .postbox-content h3 {
+    margin: 10px 0;
+    font-size: 24px;
+    grid-area: text;
+  }
+
+  .postbox-content p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: beige;
+    grid-area: text;
+  }
+
+  .read-more-btn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    grid-area: text;
+  }
+
+  .read-more-btn:hover {
+    background-color: #0056b3;
+    grid-area: text;
   }
 }

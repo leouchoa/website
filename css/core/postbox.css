@@ -1,20 +1,29 @@
 .postbox {
   display: flex;
   width: 600px; /* Increased by 20% from 500px */
+  /* height: 400px; */
   padding: 30px;
   /* background-color: white; */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   overflow: hidden;
   margin: 20px;
+  border: 2px solid yellow;
 }
 
-.postbox-image {
+.postbox-image,
+.postbox-image-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 180px; /* Increased by 20% from 150px */
   height: 180px; /* Increased by 20% from 150px */
   object-fit: cover;
-  border-radius: 8px;
-  margin-right: 20px;
+  border: 2px solid green;
+}
+
+.postbox-image-caption {
+  margin: 10px;
 }
 
 .postbox-content {
@@ -49,68 +58,4 @@
 
 .read-more-btn:hover {
   background-color: #0056b3;
-}
-
-/* Default blogposts to be vertical */
-.blogposts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: auto;
-  margin-top: 100px;
-}
-
-@media (max-width: 900px) {
-  .postbox {
-    display: flex;
-    width: 600;
-    /* height: 500px; */
-    padding: 20px;
-    background-color: inherit;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-  }
-
-  .postbox-image {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-right: 20px;
-  }
-
-  .postbox-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .postbox-content h3 {
-    margin: 0;
-    font-size: 24px;
-    color: #333;
-  }
-
-  .postbox-content p {
-    margin: 5px 0;
-    font-size: 16px;
-    color: #666;
-  }
-
-  .read-more-btn {
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    background-color: #007bff;
-    color: white;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-
-  .read-more-btn:hover {
-    background-color: #0056b3;
-  }
 }
