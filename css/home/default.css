@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 150px 200px 1000px 50px;
+  grid-template-rows: 150px 200px 900px 50px;
   grid-template-areas:
     "hd hd hd "
     "intro intro intro "
@@ -77,18 +77,19 @@
   color: white;
   border-radius: 4px;
   cursor: pointer;
+  border: 2px solid #007bff;
 }
 
 .email button:hover {
   background-color: #0056b3;
 }
 
-/* Default blogposts to be vertical */
 .blogposts {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  /* height: 700px; */
   height: auto;
   margin-top: 100px;
 }
@@ -96,18 +97,15 @@
 .footer {
   display: flex;
   justify-content: center;
-  /* position: absolute; */
-  /* bottom: 10px; */
-  /* width: 100%; */
   grid-area: ft;
 }
 
 .github-logo,
-/* .email-logo , */
 .linkedin-logo {
   display: flex;
   justify-content: center;
-  width: 40px; /* Adjust size as needed */
-  height: 40px; /* Adjust size as needed */
+  width: 40px;
+  height: 40px;
+  padding: 10px;
   border-radius: 60%; /* Makes the image round */
 }
