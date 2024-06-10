@@ -16,10 +16,12 @@
   .hd {
     margin: 20px;
     padding: 10px;
-    font-size: 25px;
   }
 
   .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-areas:
       "pic"
@@ -27,6 +29,9 @@
   }
 
   .intro-prof-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     grid-template-columns: 1fr;
     grid-template-areas:
       "img"
@@ -34,6 +39,7 @@
   }
 
   .intro-prof-info-img {
+    display: flex;
     justify-content: center;
     margin-bottom: 20px;
   }
@@ -45,23 +51,41 @@
 
   .intro-prof-info-txt {
     text-align: center;
-    font-size: 18px;
   }
 
   .intro-prof-subs {
-    font-size: 18px;
     text-align: center;
   }
 
   .subsc {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .subsc input,
+  .subsc textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 4px;
+  }
+
+  .subsc button {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #007bff;
   }
 
   .blogposts {
+    display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
     width: 100%;
     height: auto;
+    justify-items: center;
   }
 
   .postbox {
@@ -79,11 +103,14 @@
   }
 
   .footer {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .github-logo,
-  .linkedin-logo {
+  .linkedin-logo,
+  .email-logo {
     width: 35px;
     height: 35px;
     margin: 10px;

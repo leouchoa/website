@@ -1,16 +1,57 @@
 .postbox {
   display: flex;
-  width: 200px;
-  height: 200px;
-  margin: 50px;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  border-radius: 2rem;
+  width: 600px;
+  padding: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 20px;
 }
 
-.postbox-a:link,
-.postbox-a:visited {
-  color: black;
+.postbox-image,
+.postbox-image-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
 }
+
+.postbox-image-caption {
+  margin: 10px;
+}
+
+.postbox-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: beige;
+}
+
+.postbox-content h3 {
+  margin: 0;
+}
+
+.postbox-content p {
+  margin: 5px 0;
+  color: beige;
+}
+
+.read-more-btn {
+  padding: 12px 24px;
+  margin-top: 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: 2px solid #007bff;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
+}
+
+/* .read-more-btn-wrapper{ */
+/*     background-color: #007bff; */
+/* } */
