@@ -1,20 +1,21 @@
 @media (max-width: 1200px) and (min-width: 600px) {
   .container {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
-      "hd"
-      "postbox";
+      "hd hd hd "
+      "postbox postbox postbox ";
   }
 
   .header {
-    flex-direction: column;
+    /* flex-direction: column; */
+    grid-area: hd;
   }
 
   .hd {
     margin: 20px;
     padding: 10px;
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .blogposts {
