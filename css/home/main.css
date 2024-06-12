@@ -1,4 +1,6 @@
 @import url("../core/main.css");
 @import url("./default.css");
-@import url("./tablet.css");
-@import url("./mobile.css");
+/* improve this later on */
+/* @import url("./tablet.css"); */
+/* @import url("./mobile.css"); */
+@import url("./tablet_and_mobile.css");
